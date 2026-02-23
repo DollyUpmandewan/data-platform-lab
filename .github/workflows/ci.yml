@@ -1,0 +1,24 @@
+name: pipeline-ci
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -e '.[test]'
+      - run: ruff check .
+      - run: pytest --junitxml=reports/junit.xml --cov=pipeline --cov-report=term --cov-report=xml:reports/coverage.xml
+      - run: python -m pipeline.cli --fixture --start 2025-01-01 --end 2025-01-03
+      - run: docker build -t reliability-lab:${{ github.sha }} .
+      - run: docker run --rm reliability-lab:${{ github.sha }} --fixture --start 2025-01-01
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-and-test-reports
+          path: reports/
