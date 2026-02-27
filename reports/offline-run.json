@@ -1,0 +1,163 @@
+{
+  "run_id": "8f259dabdfbc4a91a1d7618581f38fd4",
+  "source": "synthetic",
+  "passed": true,
+  "partitions": [
+    {
+      "date": "2025-01-01",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "schema_drift",
+          "passed": true,
+          "detail": "Daily fields must match the version-1 contract exactly"
+        },
+        {
+          "name": "nulls",
+          "passed": true,
+          "detail": "No required value may be null"
+        },
+        {
+          "name": "schema_validation",
+          "passed": true,
+          "detail": "ISO dates and numeric weather values"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "detail": "Natural key: location + date"
+        },
+        {
+          "name": "row_count_anomaly",
+          "passed": true,
+          "detail": "Expected 1 daily row; observed 1"
+        },
+        {
+          "name": "freshness",
+          "passed": true,
+          "detail": "Every observation must match the requested partition date"
+        },
+        {
+          "name": "value_ranges",
+          "passed": true,
+          "detail": "Finite plausible values; maximum >= minimum; precipitation >= 0"
+        }
+      ],
+      "manifest": {
+        "schema_version": 1,
+        "run_id": "8f259dabdfbc4a91a1d7618581f38fd4",
+        "date": "2025-01-01",
+        "rows": 1,
+        "source": "synthetic",
+        "data_key": "runs/8f259dabdfbc4a91a1d7618581f38fd4/date=2025-01-01/validated.jsonl",
+        "raw_key": "runs/8f259dabdfbc4a91a1d7618581f38fd4/date=2025-01-01/raw.json",
+        "sha256": "c08c6140939235eaab0dfe8de61f3846596c49308550575214e7bb8ceda9077f",
+        "published_at": "2026-10-21T19:13:06.124459+00:00"
+      }
+    },
+    {
+      "date": "2025-01-02",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "schema_drift",
+          "passed": true,
+          "detail": "Daily fields must match the version-1 contract exactly"
+        },
+        {
+          "name": "nulls",
+          "passed": true,
+          "detail": "No required value may be null"
+        },
+        {
+          "name": "schema_validation",
+          "passed": true,
+          "detail": "ISO dates and numeric weather values"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "detail": "Natural key: location + date"
+        },
+        {
+          "name": "row_count_anomaly",
+          "passed": true,
+          "detail": "Expected 1 daily row; observed 1"
+        },
+        {
+          "name": "freshness",
+          "passed": true,
+          "detail": "Every observation must match the requested partition date"
+        },
+        {
+          "name": "value_ranges",
+          "passed": true,
+          "detail": "Finite plausible values; maximum >= minimum; precipitation >= 0"
+        }
+      ],
+      "manifest": {
+        "schema_version": 1,
+        "run_id": "8f259dabdfbc4a91a1d7618581f38fd4",
+        "date": "2025-01-02",
+        "rows": 1,
+        "source": "synthetic",
+        "data_key": "runs/8f259dabdfbc4a91a1d7618581f38fd4/date=2025-01-02/validated.jsonl",
+        "raw_key": "runs/8f259dabdfbc4a91a1d7618581f38fd4/date=2025-01-02/raw.json",
+        "sha256": "7a4f541c8943391c029947a2e943d0b88aabf428cfb4e7aba1e83d147eff40f4",
+        "published_at": "2026-10-21T19:13:06.142208+00:00"
+      }
+    },
+    {
+      "date": "2025-01-03",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "schema_drift",
+          "passed": true,
+          "detail": "Daily fields must match the version-1 contract exactly"
+        },
+        {
+          "name": "nulls",
+          "passed": true,
+          "detail": "No required value may be null"
+        },
+        {
+          "name": "schema_validation",
+          "passed": true,
+          "detail": "ISO dates and numeric weather values"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "detail": "Natural key: location + date"
+        },
+        {
+          "name": "row_count_anomaly",
+          "passed": true,
+          "detail": "Expected 1 daily row; observed 1"
+        },
+        {
+          "name": "freshness",
+          "passed": true,
+          "detail": "Every observation must match the requested partition date"
+        },
+        {
+          "name": "value_ranges",
+          "passed": true,
+          "detail": "Finite plausible values; maximum >= minimum; precipitation >= 0"
+        }
+      ],
+      "manifest": {
+        "schema_version": 1,
+        "run_id": "8f259dabdfbc4a91a1d7618581f38fd4",
+        "date": "2025-01-03",
+        "rows": 1,
+        "source": "synthetic",
+        "data_key": "runs/8f259dabdfbc4a91a1d7618581f38fd4/date=2025-01-03/validated.jsonl",
+        "raw_key": "runs/8f259dabdfbc4a91a1d7618581f38fd4/date=2025-01-03/raw.json",
+        "sha256": "bd820cc1c61e1f8611c08f66d6a9851c11e9adc777b6257d50eb2698bce6e96d",
+        "published_at": "2026-10-21T19:13:06.154213+00:00"
+      }
+    }
+  ]
+}
